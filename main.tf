@@ -6,7 +6,6 @@ resource "aws_instance" "Res1" {
   tags = {
     Name   = var.instance_name[count.index]
     owner  = var.owner[0]
-    Volume = "Himanshi"
   }
   volume_tags = {
     Name  = var.instance_name[count.index]
